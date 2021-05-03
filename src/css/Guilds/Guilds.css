@@ -1,0 +1,231 @@
+.guilds{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.guilds-options{
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    border-top: var(--border-bold);
+}
+
+.options{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.option{
+    display: block;
+    height: 30vh;
+    width: 18vh;
+    transform-origin: 50% 0;
+    cursor: pointer;
+}
+
+.option-rotate-right{
+    animation-name: orr;
+    animation-duration: 2s;
+    transform: rotate(0deg);
+}
+
+@keyframes orr {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+     }
+}
+
+.option-rotate-left{
+    animation-name: orl;
+    animation-duration: 2s;
+    transform: rotate(0deg);
+}
+
+@keyframes orl {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+     }
+}
+
+
+.dot{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -5px;
+
+}
+.spine{
+    display: block;
+    width: 1px;
+    height: 15vh;
+    border-left: var(--border-bold);
+    margin: auto;
+}
+
+.option-img-container{
+    width: 16vh;
+    height: 16vh;
+    border: var(--border-bold);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.option-img{
+    height: 14vh;
+    width: 14vh;
+    margin-top: 0.8vh;
+    margin-left: 0.8vh;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.guilds-container{
+    width: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+}
+
+.guild{
+    width: 40vh;
+    height: 40vh;
+    margin: 3vh;
+    box-sizing: border-box;
+}
+
+.guild-container{
+    padding: 1vh;
+    width: 100%;
+    height: 100%;
+    border: var(--border-bold);
+    box-sizing: border-box;
+}
+
+.guild-container-padIn{
+    animation-name: gcPi;
+    animation-duration: 0.5s;
+    padding: 1vh;
+}
+
+@keyframes gcPi {
+    from{
+        padding: 0vh;
+    }
+    to{
+        padding: 1vh;
+    }
+}
+
+.guild-container-padOut{
+    animation-name: gcPo;
+    animation-duration: 0.5s;
+    padding: 0vh;
+}
+
+@keyframes gcPo {
+    from{
+        padding: 1vh;
+    }
+    to{
+        padding: 0vh;
+    }
+}
+
+
+
+.guild-content{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.guild-content-container{
+    position: absolute;
+    bottom: -100%;
+    right: 0;
+    width: 100%;
+    min-height: 30%;
+    background: rgba(255, 255, 255, 0.9);
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.guild-icon{
+    position: absolute;
+    display: block;
+    width: 20%;
+    top: -2em;
+    left: 40%;
+}
+
+.guild-title{
+    display: block;
+    text-align: center;
+    padding: 1em 0.5em;
+    color: var(--font-success);
+    font-size: 1.2em;
+}
+
+.guild-up{
+    animation-name: guildUp;
+    animation-duration: 0.5s;
+    bottom: 0;
+}
+
+@keyframes guildUp {
+    from{
+        bottom: -100%;
+    }
+    to{
+        bottom: 0;
+    }
+}
+
+.guild-down{
+    animation-name: guildDown;
+    animation-duration: 0.5s;
+    bottom: -100%;
+}
+
+@keyframes guildDown {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: -100%;
+    }
+}

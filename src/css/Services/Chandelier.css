@@ -1,0 +1,99 @@
+.chandelier{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.swing{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    transform-origin: 50% 0;
+    animation-name: swinging;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.swing-quick{
+    animation-duration: 2.1s;
+}
+
+.swing-quick .swing-img{
+    animation-duration: 2s;
+}
+
+.swing-slow{
+    animation-duration: 4.8s;
+}
+
+.swing-slow .swing-img{
+    animation-duration: 7.5s;
+}
+
+
+
+@keyframes swinging {
+    0%{
+        transform: rotate(22deg);
+    }
+    5%{
+        transform: rotate(20deg);
+    }
+    45%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(-22deg);
+    }
+    55%{
+        transform: rotate(-20deg);
+    }
+
+    95%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(22deg);
+    }
+}
+
+
+.swing-dot{
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    border-radius: 50%;
+    background-color: var(--font-success);
+}
+
+.swing-rope{
+    display: block;
+    height: 35vh;
+    width: 1px;
+    margin: auto;
+    border: var(--border-bold);
+    border-width: 1px;
+}
+
+.rope-long{
+    height: 50vh;
+}
+
+.rope-short{
+    height: 20vh;
+}
+
+.swing-img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: -25%;
+    animation-name: dreamRotate;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}

@@ -1,0 +1,5 @@
+@media (max-height: 600px) {
+    .intro-container{
+        margin-top: 20vh;
+    }
+}

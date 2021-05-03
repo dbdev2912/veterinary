@@ -1,0 +1,16 @@
+@media (max-height: 600px) {
+    .footer *{
+        font-size: 1em;
+    }
+
+    .util{
+        padding: 0.2em;
+        margin: 0.4em;
+    }
+    .footer-col:first-child{
+        width: 40%;
+    }
+    .footer-col:nth-child(2){
+        width: 60%;
+    }
+}

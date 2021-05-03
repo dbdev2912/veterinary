@@ -1,0 +1,8 @@
+@media (max-height: 600px) {
+    .foods-content-title{
+        font-size: 1.4em;
+    }
+    .foods-content-content{
+        font-size: 1.0em;
+    }
+}

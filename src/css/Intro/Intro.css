@@ -1,0 +1,103 @@
+.intro-theme{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../public/img/bg/bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-container{
+    width: 80vw;
+    margin: auto;
+    padding: 1em;
+    margin-top: 55vh;
+    min-height: 40vh;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.intro-container-hide{
+    animation-name: introHide;
+    animation-duration: 1s;
+    margin-left: 0;
+    opacity: 0;
+}
+
+@keyframes introHide {
+    from{
+        margin-left: 10vw;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0;
+        opacity: 0;
+    }
+}
+
+
+.intro-container-show{
+    animation-name: introShow;
+    animation-duration: 1s;
+    margin-left: 10vw;
+    opacity: 1;
+}
+
+@keyframes introShow {
+    from{
+        margin-left: 0;
+        opacity: 0;
+    }
+    to{
+        margin-left: 10vw;
+        opacity: 1;
+    }
+}
+
+
+[class*="intro-title-"]{
+    display: block;
+    text-align: center;
+    margin: 0.5em;
+    font-size: 1.2em;
+}
+
+.intro-title-brand{
+    font-size: 1.2em;
+}
+
+.introboxes{
+    width: 100%;
+    display: flex;
+    min-height: 20vh;
+}
+
+.introbox{
+    width: 33.33%;
+}
+
+.intro-box-img img{
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.intro-box-content{
+    margin-top: 0.5em;
+}
+
+[class*="intro-box-"]{
+    display: block;
+    text-align: center;
+    color: var(--font-light);
+}
+
+
+.intro-box-title{
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.intro-box-content{
+    font-size: .9em;
+    padding: 0.5em;
+}

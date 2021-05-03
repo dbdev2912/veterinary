@@ -1,0 +1,56 @@
+.dream{
+    position: absolute;
+    filter: blur(1px);
+    z-index: 0 !important;
+    transform: translateZ(10px) scale(1.1);
+    opacity: 0.5;
+}
+
+.dream img{
+    width: 100%;
+    animation-name: dreamRotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.dream-big{
+    width: 30vh;
+    height: 30vh;
+}
+
+.dream-medium{
+    width: 15vh;
+    height: 15vh;
+}
+
+.dream-small{
+    width: 5vh;
+    height: 5vh;
+}
+
+.dream-tiny{
+    width: 1vh;
+    height: 1vh;
+}
+
+
+.dream-quick{
+    animation-duration: 25s;
+}
+
+.dream-swift{
+    animation-duration: 37.5s;
+}
+
+.dream-slow{
+    animation-duration: 50s;
+}
+
+@keyframes dreamRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

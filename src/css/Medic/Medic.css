@@ -1,0 +1,123 @@
+.medic{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    /* background-image: url(../../public/img/bg/bg-2.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.medic-column{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.medic-column-right{
+    background-image: url(../../public/img/content/ct-13.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.medic-cell{
+    width: 100%;
+    height: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: slightlyMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    box-sizing: border-box;
+}
+
+.medic-cell img{
+    display: block;
+    height: 30vh;
+    margin: auto;
+}
+
+@keyframes slightlyMove {
+    0%{
+        padding-top: 0vh;
+    }
+    50%{
+        padding-top: 5vh;
+    }
+    100%{
+        padding-top: 0vh;
+    }
+}
+
+.medic-carousal{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.medic-carousal-container{
+    margin: auto;
+    width: 80%;
+    min-height: 40vh;
+    border: var(--border-bold);
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.medic-img-card{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.medic-img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.medic-prev{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    height: 5vh;
+    width: 5vh;
+    border-left: var(--border-bold);
+    border-bottom: var(--border-bold);
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.medic-prev:hover{
+    transform: scale(1.35) rotate(45deg);
+}
+
+.medic-next{
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    height: 5vh;
+    width: 5vh;
+    border-left: var(--border-bold);
+    border-bottom: var(--border-bold);
+    transform: rotate(225deg);
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+
+.medic-next:hover{
+    transform: scale(1.35) rotate(225deg);
+}

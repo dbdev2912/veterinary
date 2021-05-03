@@ -1,0 +1,85 @@
+.services{
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+}
+
+.services-container{
+    display: flex;
+}
+
+[class*="services-column-"]{
+    width: 31vw;
+    margin: 1vh 1vw;
+}
+
+.service{
+    width: 80%;
+    margin: auto;
+    min-width: 200px;
+    padding: 1em;
+    margin-top: 2em;
+    height: 25vh;
+    box-sizing: border-box;
+}
+
+.service-to-top{
+    animation-name: serviceToTop;
+    animation-duration: 0.5s;
+    padding-top: 1em;
+    opacity: 1;
+}
+
+@keyframes serviceToTop {
+    from{
+        padding-top: 3em;
+        opacity: 0.5;
+    }
+    to{
+        padding-top: 1em;
+        opacity: 1;
+    }
+}
+
+
+.service-to-bot{
+    animation-name: serviceToBot;
+    animation-duration: 0.5s;
+    padding-top: 3em;
+    opacity: 0.5;
+}
+
+@keyframes serviceToBot {
+    from{
+        padding-top: 1em;
+        opacity: 1;
+    }
+    to{
+        padding-top: 3em;
+        opacity: 0.5;
+    }
+}
+
+
+[class*="service-"]{
+    display: block;
+}
+
+.service-title{
+    color: var(--font-success);
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.service-description{
+    color: var(--font-pale);
+}
+
+.gradient-logo{
+    width: 100%;
+    height: 100%;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: relative;
+}

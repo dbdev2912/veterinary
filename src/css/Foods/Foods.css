@@ -1,0 +1,125 @@
+.foods{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../public/img/bg/bg-4.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.foods-content{
+    margin-left: 10vw;
+    color: var(--font-success);
+}
+
+.foods-content-up{
+    animation-name: fcu;
+    animation-duration: 1s;
+    margin-top: 0;
+    opacity: 1;
+}
+
+.foods-content-down{
+    animation-name: fcd;
+    animation-duration: 1s;
+    margin-top: 20vh;
+    opacity: .5;
+}
+
+@keyframes fcu {
+    from{
+        margin-top: 20vh;
+        opacity: .5;
+    }
+    to{
+        margin-top: 10vh;
+        opacity: 1;
+    }
+}
+
+@keyframes fcd {
+    from{
+        margin-top: 10vh;
+        opacity: 1;
+    }
+    to{
+        margin-top: 20vh;
+        opacity: .5;
+    }
+}
+
+.foods-content-title{
+    margin: 0;
+    margin-top: 10vh;
+    padding: 1.5rem;
+    padding-left: 0;
+    font-size: 2.5em;
+}
+
+.foods-content-content{
+    display: block;
+    padding: 1.5rem;
+    padding-left: 0;
+    max-width: 40vw;
+    font-size: 1.5em;
+}
+
+.foods-carousel-container{
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    left: 10vw;
+    bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.foods-prev{
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 15px;
+    height: 8vh;
+    width: 8vh;
+    border-left: var(--border-bold);
+    border-bottom: var(--border-bold);
+    border-width: 5px;
+    border-radius: 50% 0 50% 0;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+.foods-next{
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    height: 8vh;
+    width: 8vh;
+    border-left: var(--border-bold);
+    border-bottom: var(--border-bold);
+    border-width: 5px;
+    border-radius: 50% 0 50% 0;
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+.foods-carousel{
+    width: 80%;
+    height: calc(100% - 4em);
+    margin: 2em auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.foods-img-container{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.foods-img-container img{
+    height: 100%;
+}
